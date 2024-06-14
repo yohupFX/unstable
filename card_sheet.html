@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>unstable</title>
+    <title>Unstable</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="downgrade-cards">
+    <div class="nickname-container">
+        <input type="text" id="nickname" placeholder="Enter your nickname">
+        <button id="setNicknameButton">Set Nickname</button>
+    </div>
+    <div class="players-container">
+        <h3>Players</h3>
+        <ul id="playersList"></ul>
+    </div>
+
+    <div class="game-container">
+        <!-- Downgrade Cards -->
+        <div class="downgrade-cards">
             <div class="card" data-name="cardD1">
                 <div class="back">?</div>
                 <img src="cards/cards/card downgrade/barbedwire.jpg" alt="Card 1">
@@ -41,61 +52,58 @@
                 <img src="cards/cards/card downgrade/tinystable.jpg" alt="Card 8">
             </div>
         </div>
-		
-	
-	
-		<!-- Baby Cards -->
-	
-		<div class="baby-unicorns-cards">
-    <div class="card" data-name="babyUnicorn1">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babyblack.jpg" alt="Baby Unicorn 1">
-    </div>
-    <div class="card" data-name="babyUnicorn2">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babyblue.jpg" alt="Baby Unicorn 2">
-    </div>
-    <div class="card" data-name="babyUnicorn3">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babybrown.jpg" alt="Baby Unicorn 3">
-    </div>
-    <div class="card" data-name="babyUnicorn4">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babydeath.jpg" alt="Baby Unicorn 4">
-    </div>
-    <div class="card" data-name="babyUnicorn5">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babygreen.jpg" alt="Baby Unicorn 5">
-    </div>
-    <div class="card" data-name="babyUnicorn6">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babynarwhal.jpg" alt="Baby Unicorn 6">
-    </div>
-    <div class="card" data-name="babyUnicorn7">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babyorange.jpg" alt="Baby Unicorn 7">
-    </div>
-    <div class="card" data-name="babyUnicorn8">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babypink.jpg" alt="Baby Unicorn 8">
-    </div>
-    <div class="card" data-name="babyUnicorn9">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babypurple.jpg" alt="Baby Unicorn 9">
-    </div>
-    <div class="card" data-name="babyUnicorn10">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babyrainbow.jpg" alt="Baby Unicorn 10">
-    </div>
-    <div class="card" data-name="babyUnicorn11">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babywhite.jpg" alt="Baby Unicorn 11">
-    </div>
-    <div class="card" data-name="babyUnicorn12">
-        <div class="back">?</div>
-        <img src="cards/unicorns/baby/babyyellow.jpg" alt="Baby Unicorn 12">
-    </div>
-</div>
+
+        <!-- Baby Unicorn Cards -->
+        <div class="baby-unicorns-cards">
+            <div class="card" data-name="babyUnicorn1">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babyblack.jpg" alt="Baby Unicorn 1">
+            </div>
+            <div class="card" data-name="babyUnicorn2">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babyblue.jpg" alt="Baby Unicorn 2">
+            </div>
+            <div class="card" data-name="babyUnicorn3">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babybrown.jpg" alt="Baby Unicorn 3">
+            </div>
+            <div class="card" data-name="babyUnicorn4">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babydeath.jpg" alt="Baby Unicorn 4">
+            </div>
+            <div class="card" data-name="babyUnicorn5">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babygreen.jpg" alt="Baby Unicorn 5">
+            </div>
+            <div class="card" data-name="babyUnicorn6">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babynarwhal.jpg" alt="Baby Unicorn 6">
+            </div>
+            <div class="card" data-name="babyUnicorn7">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babyorange.jpg" alt="Baby Unicorn 7">
+            </div>
+            <div class="card" data-name="babyUnicorn8">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babypink.jpg" alt="Baby Unicorn 8">
+            </div>
+            <div class="card" data-name="babyUnicorn9">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babypurple.jpg" alt="Baby Unicorn 9">
+            </div>
+            <div class="card" data-name="babyUnicorn10">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babyrainbow.jpg" alt="Baby Unicorn 10">
+            </div>
+            <div class="card" data-name="babyUnicorn11">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babywhite.jpg" alt="Baby Unicorn 11">
+            </div>
+            <div class="card" data-name="babyUnicorn12">
+                <div class="back">?</div>
+                <img src="cards/unicorns/baby/babyyellow.jpg" alt="Baby Unicorn 12">
+            </div>
+        </div>
 
         <!-- Upgrade Cards -->
         <div class="upgrade-cards">
@@ -205,7 +213,7 @@
             </div>
             <div class="card" data-name="cardI2">
                 <div class="back">?</div>
-                <img src="cards/cards/card instant/superneigh (2).png" alt="Card 2">
+                <img src="cards/cards/card instant/superneigh.png" alt="Card 2">
             </div>
         </div>
 
@@ -213,35 +221,35 @@
         <div class="unicorns-basic-cards">
             <div class="card" data-name="cardUB1">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicblue.jpg" alt="Card 1">
+                <img src="cards/unicorns/unicorns basic/basicblue.jpg" alt="Card 1">
             </div>
             <div class="card" data-name="cardUB2">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicgreen.jpg" alt="Card 2">
+                <img src="cards/unicorns/unicorns basic/basicgreen.jpg" alt="Card 2">
             </div>
             <div class="card" data-name="cardUB3">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicindigo.jpg" alt="Card 3">
+                <img src="cards/unicorns/unicorns basic/basicindigo.jpg" alt="Card 3">
             </div>
             <div class="card" data-name="cardUB4">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicnarwhal.jpg" alt="Card 4">
+                <img src="cards/unicorns/unicorns basic/basicnarwhal.jpg" alt="Card 4">
             </div>
             <div class="card" data-name="cardUB5">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicorange.jpg" alt="Card 5">
+                <img src="cards/unicorns/unicorns basic/basicorange.jpg" alt="Card 5">
             </div>
             <div class="card" data-name="cardUB6">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicpurple.jpg" alt="Card 6">
+                <img src="cards/unicorns/unicorns basic/basicpurple.jpg" alt="Card 6">
             </div>
             <div class="card" data-name="cardUB7">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicred.jpg" alt="Card 7">
+                <img src="cards/unicorns/unicorns basic/basicred.jpg" alt="Card 7">
             </div>
             <div class="card" data-name="cardUB8">
                 <div class="back">?</div>
-                <img src="cards\unicorns\unicorns basic\basicyellow.jpg" alt="Card 8">
+                <img src="cards/unicorns/unicorns basic/basicyellow.jpg" alt="Card 8">
             </div>
         </div>
 
@@ -339,8 +347,10 @@
                 <div class="back">?</div>
                 <img src="cards/unicorns/unicorns magical/unicornonthecob.jpg" alt="Card 23">
             </div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
 </body>
 </html>
