@@ -8,13 +8,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Unstable Card Game</h1>
-        <p>Get ready for an exciting card game experience!</p>
-        <button onclick="startGame()">Start Game</button>
-        <div class="background-container">
-            <input type="file" id="backgroundImageInput" accept="image/*">
-            <button onclick="setBackground()">Set Background</button>
-        </div>
+        <header>
+            <h1>Welcome to Unstable Card Game</h1>
+        </header>
+        <main>
+            <p>Get ready for an exciting card game experience!</p>
+            <button class="start-button" onclick="startGame()">Start Game</button>
+        </main>
+        <footer>
+            <div class="background-container">
+                <label for="backgroundImageInput" class="file-label">Choose Background Image</label>
+                <input type="file" id="backgroundImageInput" accept="image/*">
+                <button class="background-button" onclick="setBackground()">Set Background</button>
+            </div>
+        </footer>
     </div>
 
     <script>
