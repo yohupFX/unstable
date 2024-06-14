@@ -24,11 +24,13 @@ body {
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    color: #4A3F94;
 }
 
 p {
     font-size: 1.2em;
     margin-bottom: 20px;
+    color: #333;
 }
 
 button {
@@ -51,11 +53,35 @@ button:hover {
 }
 
 .background-container input {
-    padding: 5px;
+    display: none;
+}
+
+.background-container label {
+    padding: 10px;
+    font-size: 1em;
+    color: #4A3F94;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .background-container button {
     margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #2e3a87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.background-container button:hover {
+    background-color: #1d285e;
 }
 
 /* Styles for the game page */
