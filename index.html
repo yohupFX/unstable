@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unstable Card Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Unstable Card Game</h1>
-    <p>Click the button below to start the game.</p>
-    <button onclick="startGame()">Start Game</button>
+    <div class="container">
+        <h1>Welcome to Unstable Card Game</h1>
+        <p>Get ready for an exciting card game experience!</p>
+        <button onclick="startGame()">Start Game</button>
+        <div class="background-container">
+            <input type="file" id="backgroundImageInput" accept="image/*">
+            <button onclick="setBackground()">Set Background</button>
+        </div>
+    </div>
 
     <script>
         function startGame() {
             window.location.href = 'card_sheet.html';
+        }
+
+        function setBackground() {
+            const input = document.getElementById('backgroundImageInput');
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.body.style.backgroundImage = `url(${e.target.result})`;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
         }
     </script>
 </body>
