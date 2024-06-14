@@ -1,18 +1,99 @@
-/* style.css */
+/* General styles for the start page */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #2e3a87;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d285e;
+}
+
+.background-container {
+    margin-top: 20px;
+}
+
+.background-container input {
+    padding: 5px;
+}
+
+.background-container button {
+    margin-top: 10px;
+}
+
+/* Styles for the game page */
+.nickname-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.players-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.players-container h3 {
+    margin: 0 0 10px;
+}
+
+.players-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.players-container li {
+    margin: 5px 0;
 }
 
 .game-container {
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-gap: 10px;
+    margin-top: 100px; /* Adjust margin to fit your layout */
 }
 
 .card {
@@ -47,24 +128,3 @@ body {
     font-size: 24px;
     transform: rotateY(180deg);
 }
-
-
-.nickname-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.players-container {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.players-container h3 {
-    margin: 0 
-
