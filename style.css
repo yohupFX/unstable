@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    background-image: url('path/to/your/background.jpg'); /* Set your background image here */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,42 +49,6 @@ button:hover {
     background-color: #1d285e;
 }
 
-.background-container {
-    margin-top: 20px;
-}
-
-.background-container input {
-    display: none;
-}
-
-.background-container label {
-    padding: 10px;
-    font-size: 1em;
-    color: #4A3F94;
-    background-color: #e0e0e0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.background-container button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: white;
-    background-color: #2e3a87;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.background-container button:hover {
-    background-color: #1d285e;
-}
-
 /* Styles for the game page */
 .nickname-container {
     position: absolute;
@@ -117,9 +82,10 @@ button:hover {
 
 .game-container {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
-    margin-top: 100px; /* Adjust margin to fit your layout */
+    padding: 20px;
+    justify-content: center;
 }
 
 .card {
